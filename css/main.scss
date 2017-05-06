@@ -105,11 +105,21 @@ body {
     margin-left: 0;
     li {
       border-radius: 10px;
-
+      margin-top: 10px;
       display: block;
       padding: 20px;
       transition: ease 0.3s all;
       &:hover{
+        background-color: #F62459;
+        a{
+            color : #fff;
+
+        }
+        i {
+          color : #fff !important;
+        }
+      }
+      &.active{
         background-color: #F62459;
         a{
             color : #fff;
@@ -151,6 +161,9 @@ body {
   }
 
 
+}
+a{
+  cursor: pointer;
 }
 .padding{
   padding: 30px;
@@ -206,11 +219,27 @@ body {
     }
   }
 }
+.panel-box{
+  width: 100%;
+  padding: 20px;
+  position: relative;
+}
 .panel {
   background-color: #fff;
+  position: absolute;
   padding: 20px;
+  width: 80%;
+  z-index: 1000;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
   border-radius: 10px;
   box-shadow: -14px 19px 50px 0 rgba(0, 0, 0, 0.2);
+  &.active{
+    visibility: visible;
+  opacity: 1;
+  }
+
   .panel-title{
     text-align: center;
     font-size: 18px;
@@ -221,6 +250,64 @@ body {
     padding: 20px;
     p{
       text-align: center;
+    }
+  }
+}
+.timeline {
+  ul {
+    li{
+      list-style-type: none;
+      position: relative;
+      width: 6px;
+      margin: 0 auto;
+      padding-top: 50px;
+      background: #F62459;
+      &:after{
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background: inherit;
+      }
+      div{
+        position: relative;
+        bottom: 0;
+        color: #fff;
+        width: 180px;
+        padding: 15px;
+        background: #F45B69;
+        &:after{
+          content: '';
+          position: absolute;
+          bottom: 7px;
+          width: 0;
+          height: 0;
+          border-style: solid;
+        }
+        .info {
+          font-size: 12px;
+        }
+      }
+      &:nth-child(odd) div {
+        left: 45px;
+      }
+      &:nth-child(odd) div::before {
+        left: -15px;
+        border-width: 8px 16px 8px 0;
+        border-color: transparent #F45B69 transparent transparent;
+      }
+      &:nth-child(even) div {
+        left: -249px;
+      }
+      &:nth-child(even) div::before {
+        right: -15px;
+        border-width: 8px 0 8px 16px;
+        border-color: transparent transparent transparent #F45B69;
+      }
     }
   }
 }

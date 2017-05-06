@@ -10,7 +10,7 @@
   <body>
     <div class="container">
         <div class="row">
-          <div class="col-sm-2">
+          <div class="col-md-2 col-sm-4">
               <div class="sidebar logo">
                 <h3>dicki</h3>
               </div>
@@ -29,14 +29,13 @@
               </div>
               <div class="nav">
                 <ul>
-                  <li><a href="#"><i class="fa red fa-user-circle-o"></i>About Me</a></li>
-                  <li><a href="#"><i class="fa green fa-graduation-cap"></i>Education</a></li>
-                  <li><a href="#"><i class="fa purple fa-briefcase"></i>Experience</a></li>
-                  <li><a href="#"><i class="fa blue fa-book"></i>Portofolio</a></li>
+                  <li><a class="link" target="#about"><i class="fa red fa-user-circle-o"></i>About Me</a></li>
+                  <li><a class="link" target="#education"><i class="fa green fa-graduation-cap"></i>Education</a></li>
+                  <li><a class="link" target="#experience"><i class="fa purple fa-briefcase"></i>Experience</a></li>
                 </ul>
               </div>
           </div>
-          <div class="col-sm-10 padding">
+          <div class="col-sm-8 col-md-10 padding">
             <div class="content">
               <div class="col-sm-8 col-xs-8 col-md-8">
                 <div class="back">
@@ -44,14 +43,69 @@
                     <b>Hello there,</b>
                   </div>
                   <div class="panel-box">
-                    <div class="panel">
+                    <div class="panel active" id="default">
                         <div class="panel-title">
                           <h4></h4>
                         </div>
                         <div class="panel-body">
                           <p>
-                            I'm Dicki Prima Yudha, I graduate student from telecommunication engineering, Telkom University
-                            ,
+                            Hi, i'm a frontend Developer
+                          </p>
+                        </div>
+                    </div>
+                    <div class="panel" id="about">
+                        <div class="panel-title">
+                          <h4></h4>
+                        </div>
+                        <div class="panel-body">
+                          <p>
+                            I'm Dicki Prima Yudha, I graduate student from telecommunication engineering, Telkom University, And now I work in Skyshi Digital Indonesia as Frontend Developer,
+
+                          </p>
+                          <p>
+                            Please check my linkedin profile, <a href="https://www.linkedin.com/in/dpyudha" target="_blank">here</a>
+                          </p>
+
+                        </div>
+                    </div>
+                    <div class="panel" id="education">
+                        <div class="panel-title">
+                          <h4></h4>
+                        </div>
+                        <div class="panel-body">
+                          <div class="timeline">
+                            <ul>
+
+                              <li>
+                                <div>
+                                  <time>2009 - 2012</time> SMA N 1 Jogonalan
+                                </div>
+                              </li>
+                              <li>
+                                <div>
+                                  <time>2012 - 2015</time> Telkom University <br>
+                                  <i class="info">Diploma of Telecommunication Engineering</i>
+                                </div>
+                              </li>
+
+                              <li>
+                                <div>
+                                  <time>2015 - 2017</time> Telkom University <br>
+                                  <i class="info">Bachelor of Telecommunication Engineering</i>
+
+                                </div>
+                              </li>
+                            </ul>
+                          </section>
+                        </div>
+                    </div>
+                    <div class="panel" id="experience">
+                        <div class="panel-title">
+                          <h4></h4>
+                        </div>
+                        <div class="panel-body">
+                          <p>
+                            Experience
                           </p>
                         </div>
                     </div>
@@ -71,4 +125,7 @@
     </div>
   </body>
   <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/main.js">
+
+  </script>
 </html>
