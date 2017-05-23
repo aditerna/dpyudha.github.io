@@ -3431,13 +3431,13 @@ h1.idy_lettering {
 
 }
 @media (max-width: 768px) {
-  .idy_box  .idy_white_txt {
-    background-image:url(img/content/center2.jpg);
+  #story {
+    background-image:url(../img/content/center2.jpg);
   }
 }
 @media (min-width: 770px) {
-  .idy_box  .idy_white_txt {
-    background-image:url(img/content/center.jpg);
+  #story {
+    background-image:url(../img/content/center.jpg);
   }
 }
 @media (min-width: 1200px) {
